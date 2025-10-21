@@ -77,7 +77,7 @@ export default function ContactSection() {
             >
               Follow Me On Social Media
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
               {Object.entries(siteConfig.social).map(([platform, url]) => {
                 const Icon = socialIcons[platform];
                 if (!Icon || !url) return null;
